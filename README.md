@@ -1,2 +1,32 @@
-# k8s.deployment.create
+# problem statement
 creates a kubernetes deployment
+
+# example usage
+
+> note: in examples, VERSION represents a version of the k8s.deployment.create pkg
+
+## install
+
+```shell
+opctl pkg install github.com/opspec-pkgs/k8s.deployment.create#VERSION
+```
+
+## run
+
+```
+opctl run github.com/opspec-pkgs/k8s.deployment.create#VERSION
+```
+
+## compose
+
+```yaml
+run:
+  op:
+    pkg: { ref: github.com/opspec-pkgs/k8s.deployment.create#VERSION }
+    inputs:
+      username:
+      sshKey:
+      hostname:
+      deployment:
+      namespace:
+```

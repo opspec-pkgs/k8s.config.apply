@@ -1,0 +1,34 @@
+name: k8s.deployment.create
+description: creates a kubernetes deployment
+inputs:
+  username:
+    string:
+      constraints: { minLength: 1 }
+      description: username of k8s master
+  sshKey:
+    string:
+      constraints: { minLength: 1 }
+      description: private ssh key authorized on k8s master
+      isSecret: true
+  hostname:
+    string:
+      constraints: { minLength: 1 }
+      description: hostname of k8s master
+  deployment:
+    file:
+      description: k8s deployment
+  namespace:
+    string:
+      description: namespace of deployment
+      default: default
+run:
+  container:
+    image: { ref: 'alpine:3.6' }
+    cmd: [ /cmd.sh ]
+    files: { /cmd.sh, /kubectl, /deployment.yml: deployment }
+    envVars:
+      username:
+      sshKey:
+      hostname:
+      deployment:
+      namespace:

@@ -24,7 +24,7 @@ run:
   op:
     pkg: { ref: github.com/opspec-pkgs/k8s.deployment.create#VERSION }
     inputs:
-      username:
+      sshUsername:
       sshKey:
       hostname:
       deployment:

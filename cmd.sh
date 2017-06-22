@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 SSH_KEY_DIR=~/.ssh
 SSH_KEY_FILE_PATH="${SSH_KEY_DIR}/id_rsa"
 

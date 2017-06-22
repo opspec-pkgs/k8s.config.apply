@@ -8,7 +8,7 @@ inputs:
   sshKey:
     string:
       constraints: { minLength: 1 }
-      description: [private] key for ssh auth w/ k8s master
+      description: '[private] key for ssh auth w/ k8s master'
       isSecret: true
   hostname:
     string:
@@ -23,9 +23,9 @@ inputs:
       default: default
 run:
   container:
-    image: { ref: 'alpine:3.6' }
+    image: { ref: 'opspecpkgs/k8s.deployment.create:1.0.0' }
     cmd: [ /cmd.sh ]
-    files: { /cmd.sh, /kubectl, /deployment.yml: deployment }
+    files: { /cmd.sh, /deployment.yml: deployment }
     envVars:
       sshUsername:
       sshKey:

@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-RUN apk add -U curl
+RUN apk add -U curl openssh
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.6.3/bin/linux/amd64/kubectl \
     && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl

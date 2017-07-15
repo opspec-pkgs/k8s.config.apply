@@ -1,7 +1,7 @@
-# problem statement
+# Problem statement
 creates a kubernetes deployment
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the k8s.deployment.create pkg
 
@@ -30,3 +30,8 @@ run:
       deployment:
       namespace:
 ```
+
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/k8s.deployment.create/issues)

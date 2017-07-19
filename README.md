@@ -20,15 +20,14 @@ opctl run github.com/opspec-pkgs/k8s.configuration.apply#VERSION
 ## compose
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/k8s.configuration.apply#VERSION }
-    inputs:
-      sshUsername:
-      sshKey:
-      hostname:
-      deployment:
-      namespace:
+op:
+  pkg: { ref: github.com/opspec-pkgs/k8s.configuration.apply#VERSION }
+  inputs:
+    sshUsername:
+    sshKey:
+    hostname:
+    deployment:
+    namespace:
 ```
 
 # Support

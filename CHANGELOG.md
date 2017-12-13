@@ -5,3 +5,10 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.0] - 2017-12-12
+
+### Changed
+
+- Add kubeConfig as input & update deployment to configuration
+
+## \[1.0.0] - 2017-12-11

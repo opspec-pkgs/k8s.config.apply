@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.orguration.apply.svg?branch=master)](https://travis-ci.orguration.apply)
+[![Build Status](https://travis-ci.org/opspec-pkgs/k8s.configuration.apply.svg?branch=master)](https://travis-ci.org/opspec-pkgs/k8s.configuration.apply)
+
+<img src="icon.svg" alt="icon" height="100px">
 
 # Problem statement
 
@@ -13,20 +15,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install k8s.configuration.apply#2.0.0
+opctl pkg install github.com/opspec-pkgs/k8s.configuration.apply#2.0.0
 ```
 
 ## Run
 
 ```
-opctl run k8s.configuration.apply#2.0.0
+opctl run github.com/opspec-pkgs/k8s.configuration.apply#2.0.0
 ```
 
 ## Compose
 
 ```yaml
 op:
-  pkg: { ref: k8s.configuration.apply#2.0.0 }
+  pkg: { ref: github.com/opspec-pkgs/k8s.configuration.apply#2.0.0 }
   inputs:
     kubeConfig:
     configuration:
@@ -39,7 +41,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://k8s.configuration.apply/issues)
+[open an issue](https://github.com/opspec-pkgs/k8s.configuration.apply/issues)
 
 # Releases
 

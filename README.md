@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.orguration.apply.svg?branch=master)](https://travis-ci.orguration.apply)
 
-
 # Problem statement
 
 applies configuration to a k8s cluster
@@ -29,8 +28,8 @@ opctl run k8s.configuration.apply#2.0.0
 op:
   pkg: { ref: k8s.configuration.apply#2.0.0 }
   inputs:
-    configuration:
     kubeConfig:
+    configuration:
     # params w/ default
     namespace:
 ```

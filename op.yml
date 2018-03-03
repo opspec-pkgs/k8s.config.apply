@@ -1,4 +1,4 @@
-name: k8s.configuration.apply
+name: github.com/opspec-pkgs/k8s.configuration.apply
 description: applies configuration to a k8s cluster
 inputs:
   kubeConfig:

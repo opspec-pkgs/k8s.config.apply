@@ -13,10 +13,10 @@ inputs:
     string:
       description: namespace to target
       default: default
-version: 2.1.0
+version: 2.2.0
 run:
   container:
-    image: { ref: 'opspecpkgs/k8s.configuration.apply:2.1.0' }
+    image: { ref: 'opspecpkgs/k8s.configuration.apply:2.2.0' }
     cmd: [ /cmd.sh ]
     files:
       /cmd.sh:

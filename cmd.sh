@@ -2,5 +2,5 @@
 
 set -e
 
-echo "applying k8s configuration"
-kubectl apply -f /configuration --namespace "$namespace"
+echo "applying k8s config"
+kubectl apply -f /config --namespace "$namespace"

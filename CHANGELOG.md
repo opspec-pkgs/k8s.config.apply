@@ -5,6 +5,14 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[3.0.0] - 2019-03-07
+
+### Changed
+
+- Update kubectl to latest
+- Rename for consistency w/ k8s.config.apply-dir
+- Rename configuration input to config for consistency w/ k8s.config.apply-dir
+
 ## \[2.1.0] - 2018-03-07
 
 ### Added

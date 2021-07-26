@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/k8s.config.apply.svg?branch=master)](https://travis-ci.org/opspec-pkgs/k8s.config.apply)
+[![Build Status](https://github.com/opspec-pkgs/k8s.config.apply/workflows/build/badge.svg?branch=master)](https://github.com/opspec-pkgs/k8s.config.apply/actions?query=workflow%3Abuild+branch%3Amaster)
 
 <img src="icon.svg" alt="icon" height="100px">
 
@@ -6,41 +6,36 @@
 
 applies configuration to a k8s cluster
 
-# Format
-
-the op uses [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5) definition format
-
 # Example usage
 
-## Install
+## Visualize
 
 ```shell
-opctl op install github.com/opspec-pkgs/k8s.config.apply#3.0.0
+opctl ui github.com/opspec-pkgs/k8s.config.apply#4.0.0
 ```
 
 ## Run
 
 ```
-opctl run github.com/opspec-pkgs/k8s.config.apply#3.0.0
+opctl run github.com/opspec-pkgs/k8s.config.apply#4.0.0
 ```
 
 ## Compose
 
 ```yaml
 op:
-  ref: github.com/opspec-pkgs/k8s.config.apply#3.0.0
+  ref: github.com/opspec-pkgs/k8s.config.apply#4.0.0
   inputs:
-    # required
-    config:
-    kubeConfig:
-    ### optional; uncomment to override default(s)
-    # namespace: default
+    config:  # 👈 required; provide a value
+    kubeConfig:  # 👈 required; provide a value
+  ## uncomment to override defaults
+  #   namespace: " "
 ```
 
 # Support
 
 join us on
-[![Slack](https://opctl-slackin.herokuapp.com/badge.svg)](https://opctl-slackin.herokuapp.com/)
+[![Slack](https://img.shields.io/badge/slack-opctl-E01563.svg)](https://join.slack.com/t/opctl/shared_invite/zt-51zodvjn-Ul_UXfkhqYLWZPQTvNPp5w)
 or
 [open an issue](https://github.com/opspec-pkgs/k8s.config.apply/issues)
 

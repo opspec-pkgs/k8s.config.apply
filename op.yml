@@ -11,12 +11,13 @@ inputs:
       description: k8s configuration file to apply
   namespace:
     string:
+      constraints: { minLength: 1 }
       description: namespace to target
-      default: default
-version: 3.0.0
+      default: ' '
+version: 4.0.0
 run:
   container:
-    image: { ref: 'opspecpkgs/k8s.config.apply:3.0.0' }
+    image: { ref: 'ghcr.io/opspec-pkgs/k8s.config.apply:4.0.0' }
     cmd: [ /cmd.sh ]
     files:
       /cmd.sh:

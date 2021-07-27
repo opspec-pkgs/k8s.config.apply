@@ -2,5 +2,10 @@
 
 set -e
 
-echo "applying k8s config"
-kubectl apply -f /config --namespace "$namespace"
+applyCmd='kubectl apply -f /config'
+if [ "$namespace" != " " ]; then
+  applyCmd=$(printf "%s --namespace %s" "$applyCmd" "$namespace")
+fi
+echo "applying k8s configs"
+
+eval "$applyCmd"
